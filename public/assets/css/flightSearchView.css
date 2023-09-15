@@ -1,0 +1,12 @@
+
+.form-label {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-left: 0.75rem;
+}
+
+.dropdown-menu {
+	width: calc(100% - 2rem);
+	padding: 0rem;
+}

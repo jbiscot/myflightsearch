@@ -1,0 +1,13 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.12",
+        "vlucas/phpdotenv": "^5.5",
+        "guzzlehttp/guzzle": "^7.7",
+        "amadeus4dev/amadeus-php": "^0.3.0"
+    },
+	 "autoload": {
+		"classmap": [
+			"app/models"
+		]
+	 }
+}
