@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trip Builder v1</title>
+	<title>myflightsearch</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -59,9 +59,50 @@
 	$searchData = array_key_exists('searchData', $data) ? $data['searchData'] : [];
 	$searchDictionaries = array_key_exists('searchDictionaries', $data) ? $data['searchDictionaries'] : [];
 ?>
+
+
+<header>
+	<div class="bg-light collapse" id="navbarHeader" style="">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-md-7 py-4">
+					<h4 class="text-dark mb-3">about</h4>
+					<p class="text-muted fs-sm"  style ="text-indent:2rem">
+						welcome to MyFlightSearch, a <strong><em>PHP</em></strong> project designed with the elegance of <strong><em>MVC architecture</em></strong>. This website is currently hosted on <strong><em>Heroku</em></strong>, where it integrates the robust <strong><em>Amadeus Flight Search API</em></strong> and <strong><em>Bootstrap</em></strong>, aiming to deliver a sleek and user-friendly interface.
+					</p>
+					<p class="text-muted fs-sm"  style ="text-indent:2rem">
+						My personal objective in embarking on this project was to fully immerse myself in the world of PHP, embracing its fundamentals in the most 'vanilla' way possible. It's still a work in progress, but it serves as a testament to my unwavering commitment to ongoing growth and refinement :)
+					</p>
+					<p class="text-muted fs-sm"  style ="text-indent:2rem">
+						I'd love to hear your thoughts on my project!
+					</p>
+				</div>
+				<div class="col-sm-4 offset-md-1 py-4 d-flex align-items-center justify-content-center">
+					<div>
+						<h4 class="text-dark fs-6">contact me</h4>
+						<ul class="list-unstyled text-muted">
+						<li><a href="https://github.com/jbiscot" rel="noopener" target="_blank" class="text-dark text-muted" style="text-decoration: none"><i class="bi bi-github pe-2"></i>jbiscot</a></li>
+						<li><i class="bi bi-envelope-at pe-2 text-muted" ></i>biscodev@gmail.com</a></li>
+						</ul>
+					</div>
+			</div>
+			</div>
+	</div>
+	</div>
+	<div class="navbar navbar-light bg-light shadow-sm">
+	<div class="container">
+		<a href="#" class="navbar-brand d-flex align-items-center">
+			<i class="bi bi-airplane pe-2"></i>
+			<strong>myflightsearch</strong>
+		</a>
+		<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	</div>
+</header>
   
 <main class="container mt-5 mb-5">
-
 	<!-- search form -->
 	<div class="card text-center">
 		<div class="card-header">
@@ -76,7 +117,6 @@
 		</div>
 	
 		<div class="card-body searchCardBody rounded" >
-			<h5 class="card-title">Flight Search</h5>
 				<form class="row g-3"  action="<?= ROOT ?>/flightSearch/search" method="post">
 					<!-- test mode toggle -->
 					<div class="col-md-12 form-check form-switch d-flex justify-content-end">
@@ -220,6 +260,20 @@
 	</div>
 	
 </main>
+
+<footer class="footer py-5 px-3 font-monospace">
+	<div class="container"> 
+	  <p class="float-end">
+		<p class="mb-0">built by
+			<a href="https://github.com/jbiscot" rel="noopener" target="_blank" class="text-dark" style="text-decoration: "><i class="bi bi-github pe-1"></i>jbiscot</a>
+		</p>
+	 	<p class="mb-0">using
+			<a href="https://developers.amadeus.com" rel="noopener" target="_blank">Amadeus</a> flight search api.
+		</p>
+	</p>
+	</div> 
+</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 	<script>var data=<?php echo json_encode($data['airports']) ?>;</script>
 	<script src="/assets/javascripts/flightSearch.js"></script>
