@@ -9,6 +9,7 @@
 
 	<!-- LocalStyles -->
 	<link href="/assets/css/flightSearchView.css" rel="stylesheet" class="rel">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 	<style>
 		/* Set of background card colors */
@@ -51,6 +52,12 @@
 			background: rgb(255,255,255);
 			background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(70,125,170,1) 79%);
 		}
+
+		.footer {
+			margin-top: 1%;
+			background: rgb(255,255,255);
+			background: linear-gradient(0deg, rgba(255,255,255,1) 26%, rgba(255,245,225,1) 100%);
+		}
 	</style>
 
 </head>
@@ -59,7 +66,6 @@
 	$searchData = array_key_exists('searchData', $data) ? $data['searchData'] : [];
 	$searchDictionaries = array_key_exists('searchDictionaries', $data) ? $data['searchDictionaries'] : [];
 ?>
-
 
 <header>
 	<div class="bg-light collapse" id="navbarHeader" style="">
