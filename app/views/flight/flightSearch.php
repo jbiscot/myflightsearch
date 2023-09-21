@@ -74,10 +74,10 @@
 				<div class="col-sm-8 col-md-7 py-4">
 					<h4 class="text-dark mb-3">about</h4>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
-						welcome to MyFlightSearch, a <strong><em>PHP</em></strong> project designed with the elegance of <strong><em>MVC architecture</em></strong>. This website is currently hosted on <strong><em>Heroku</em></strong>, where it integrates the robust <strong><em>Amadeus Flight Search API</em></strong> and <strong><em>Bootstrap</em></strong>, aiming to deliver a sleek and user-friendly interface.
+						Welcome to MyFlightSearch, a <strong><em>PHP</em></strong> project designed with the <strong><em>MVC architecture</em></strong>. This website is currently hosted on <strong><em>Heroku</em></strong>, where it integrates the robust <strong><em>Amadeus Flight Search API</em></strong> and <strong><em>Bootstrap</em></strong>, aiming to deliver a sleek and user-friendly interface.
 					</p>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
-						My personal objective in embarking on this project was to fully immerse myself in the world of PHP, embracing its fundamentals in the most 'vanilla' way possible. It's still a work in progress, but it serves as a testament to my unwavering commitment to ongoing growth and refinement :)
+						My personal objective in embarking on this project was to fully immerse myself in the world of PHP, embracing its fundamentals in the most 'vanilla' way possible. It's still a work in progress, but it serves as a testament to my commitment to ongoing growth and refinement :)
 					</p>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
 						I'd love to hear your thoughts on my project!
@@ -108,7 +108,7 @@
 	</div>
 </header>
   
-<main class="container mt-5 mb-5">
+<main class="container mt-5 mb-5 px-sm-1 px-md-0 col-md-8 col-lg-7">
 	<!-- search form -->
 	<div class="card text-center">
 		<div class="card-header">
@@ -267,7 +267,7 @@
 	
 </main>
 
-<footer class="footer py-5 px-3 font-monospace">
+<footer class="footer py-5 px-3 vh-100 font-monospace">
 	<div class="container"> 
 	  <p class="float-end">
 		<p class="mb-0">built by
