@@ -74,10 +74,10 @@
 				<div class="col-sm-8 col-md-7 py-4">
 					<h4 class="text-dark mb-3">about</h4>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
-						Welcome to MyFlightSearch, a <strong><em>PHP</em></strong> project designed with the <strong><em>MVC architecture</em></strong>. This website is currently hosted on <strong><em>Heroku</em></strong>, where it integrates the robust <strong><em>Amadeus Flight Search API</em></strong> and <strong><em>Bootstrap</em></strong>, aiming to deliver a sleek and user-friendly interface.
+						Welcome to MyFlightSearch, a <strong><em>PHP</em></strong> project designed using the <strong><em>MVC architecture</em></strong>. This website is currently hosted on <strong><em>Heroku</em></strong>, where it integrates the robust <strong><em>Amadeus Flight Search API</em></strong> and <strong><em>Bootstrap</em></strong>, aiming to deliver a sleek and user-friendly interface.
 					</p>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
-						My personal objective in embarking on this project was to fully immerse myself in the world of PHP, embracing its fundamentals in the most 'vanilla' way possible. It's still a work in progress, but it serves as a testament to my commitment to ongoing growth and refinement :)
+						To embark on this project was to fully immerse myself in the world of PHP, embracing its fundamentals in the most 'vanilla' way possible. It's still a work in progress, but it serves as a testament to my commitment to ongoing growth and refinement :)
 					</p>
 					<p class="text-muted fs-sm"  style ="text-indent:2rem">
 						I'd love to hear your thoughts on my project!
@@ -162,13 +162,13 @@
 	</div>
 
 	<!-- search results -->
-	<div class="card text-center mb-5">		
-		<div class="card text-center" style="background: #467daa">
+	<div class="card text-center mb-5" style="display: contents">
+		<div class="card text-center" style="display: contents; background: #467daa">
 		<?php
 			if ($searchData) {
 				foreach ($searchData as $row) {
-					echo '<div class="card border-0">';
-					echo '<div class="card-body" style="background: #467daa">';
+					echo '<div class="card">';
+					echo '<div class="card-body border-0 rounded" style="background: #467daa">';
 					echo '<form class="row g-2 m-0" action="' . $_SERVER['REQUEST_URI'] . '" method="POST">';
 					echo '<div class="border border-dark py-1" style="background-color: lemonchiffon">';
 
@@ -243,7 +243,7 @@
 	</div>
 
 	<!-- offcanvas flight selection -->
-	<div class="card text-center">
+	<div class="card text-center" style="display: contents">
 		<div class="offcanvas offcanvas-bottom" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 			<div class="offcanvas-header pb-2" style="background-color:">
 				<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Reservation Details</h5>
@@ -267,8 +267,8 @@
 	
 </main>
 
-<footer class="footer py-5 px-3 vh-100 font-monospace">
-	<div class="container"> 
+<footer class="footer py-5 px-3 vh-100 text-center font-monospace d-flex flex-column">
+	<div class="container mt-auto"> 
 	  <p class="float-end">
 		<p class="mb-0">built by
 			<a href="https://github.com/jbiscot" rel="noopener" target="_blank" class="text-dark" style="text-decoration: "><i class="bi bi-github pe-1"></i>jbiscot</a>
