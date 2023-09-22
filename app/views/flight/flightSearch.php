@@ -244,7 +244,7 @@
 
 	<!-- offcanvas flight selection -->
 	<div class="card text-center" style="display: contents">
-		<div class="offcanvas offcanvas-bottom" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+		<div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 			<div class="offcanvas-header pb-2" style="background-color:">
 				<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Reservation Details</h5>
 				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -307,7 +307,7 @@
 
 						itineraryDirections.forEach(itinerary => {
 							const flightReserveCard = document.createElement("div");
-							flightReserveCard.className = "flightReserveCard col-sm-6 my-2 mx-auto";
+							flightReserveCard.className = "flightReserveCard col-sm-12 my-2 mx-auto";
 
 							const cardDiv = document.createElement("div");
 							cardDiv.className = "card shadow-sm";
